@@ -19,6 +19,8 @@ public class DestroyOutOfBouds : MonoBehaviour
         if (transform.position.z < bottomBound)
         {
             Destroy(gameObject);
+            Debug.Log("GAME OVER");
+            Time.timeScale = 0;
         }
 
     }
